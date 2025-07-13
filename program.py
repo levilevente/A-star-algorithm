@@ -1,7 +1,3 @@
-# Daroczi Levente
-# dlim2227
-# 521/2
-
 import plotly.graph_objects as plotly_graph_objects
 import math as mat
 import heapq
@@ -429,8 +425,8 @@ def main():
     final_path1 = a_star(matrix, start, stop, h_euclides)
     final_path2 = a_star(matrix, start, stop, h_csebisev)
     calcPathWriteToFile(matrix, final_path1, final_path2)
-    draw3d(matrix, final_path1, final_path2, "L01_3D")
-    draw2d(matrix, final_path1, final_path2, "L01_2D")
+    draw3d(matrix, final_path1, final_path2, "3D")
+    draw2d(matrix, final_path1, final_path2, "2D")
 
 
 main()
